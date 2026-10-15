@@ -249,7 +249,7 @@ if prompt is None:
     prompt = st.session_state.pop("pending_prompt", None)
 
 if prompt:
-    api_key = os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
+    api_key = os.getenv("GEMINI_API_KEY") or os.getenv("GEMINI_API_KEY")
     if not api_key:
         st.error(
             "Gemini API key not found. Add GEMINI_API_KEY to a .env file "
